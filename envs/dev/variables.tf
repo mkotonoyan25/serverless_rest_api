@@ -15,7 +15,7 @@ variable "common_tags" {
   type        = map(string)
   default = {
     Environment = "prod"
-    Project     = "scalable-web"
+    Project     = "Serverless_REST_API"
     Owner       = "tonoyan"
   }
 }
