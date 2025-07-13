@@ -8,6 +8,6 @@ resource "aws_dynamodb_table" "dynamodb_table" {
     name = var.partition_key
     type = var.partition_key_type
   }
-
+  
   tags = var.common_tags
 }

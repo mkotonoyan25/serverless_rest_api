@@ -1,3 +1,4 @@
+provider.tf
 # Terraform cache & build
 .terraform/
 .terraform.lock.hcl
