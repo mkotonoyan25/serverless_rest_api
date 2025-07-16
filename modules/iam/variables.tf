@@ -37,17 +37,14 @@ variable "iam_role_policy_statement" {
   type = map(object({
     Action    = list(string)
     Effect    = string
- #    Resource = optional(string)
-     Resource = string
+    Resource = string
   }))
+}
+
+###___Common_Tags_____
+variable "common_tags" {
+  type = map(string)
   default = {
-    lambda = {
-      Action = [
-        "dynamodb:GetItem",
-        "dynamodb:PutItem",
-        "dynamodb:DeleteItem"
-        ]
-      Effect = "Allow"
-    }
+    "Name" = "value"
   }
 }
