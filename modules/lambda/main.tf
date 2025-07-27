@@ -26,8 +26,5 @@ resource "aws_lambda_function" "lambda_function" {
     variables = each.value.environment
   }
 
-  tags = {
-    Environment = "production"
-    Application = "example"
-  }
+  tags = var.common_tags
 }
